@@ -1,74 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8" />  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
-    <title>WhatsApp Contact Landing Page</title>  
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Friendship Club</title>
 
-    <!-- Meta Pixel Code -->  
-    <script>  
-    !function(f,b,e,v,n,t,s)  
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?  
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};  
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';  
-    n.queue=[];t=b.createElement(e);t.async=!0;  
-    t.src=v;s=b.getElementsByTagName(e)[0];  
-    s.parentNode.insertBefore(t,s)}(window, document,'script',  
-    'https://connect.facebook.net/en_US/fbevents.js');  
-    fbq('init', '736119096171176');  
-    fbq('track', 'PageView');  
-    </script>  
-    <noscript><img height="1" width="1" style="display:none"  
-    src="https://www.facebook.com/tr?id=736119096171176&ev=PageView&noscript=1"  
-    /></noscript>  
-    <!-- End Meta Pixel Code -->
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-    <style>  
-        body {  
-            font-family: Arial, sans-serif;  
-            background: #f7f7f7;  
-            margin: 0;  
-            padding: 0;  
-            display: flex;  
-            justify-content: center;  
-            align-items: center;  
-            height: 100vh;  
-        }  
-        .container {  
-            background: #fff;  
-            padding: 30px;  
-            border-radius: 12px;  
-            text-align: center;  
-            width: 90%;  
-            max-width: 400px;  
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);  
-        }  
-        h2 {  
-            margin-bottom: 10px;  
-        }  
-        p {  
-            margin-bottom: 20px;  
-        }  
-        a {  
-            display: block;  
-            padding: 15px;  
-            background: #25d366;  
-            color: #fff;  
-            text-decoration: none;  
-            border-radius: 8px;  
-            font-size: 18px;  
-            font-weight: bold;  
-        }  
-        a:hover {  
-            background: #1ebe5d;  
-        }  
-    </style>  
-</head>  
-<body>  
-    <div class="container">  
-        <h2>Contact Us on WhatsApp</h2>  
-        <p>Click the button below to send us a message.</p>  
-        <a href="https://wa.me/917617379902?text=please%20send%20information" target="_blank">Chat on WhatsApp</a>  
-    </div>  
-</body>  
+body{
+  background:#000;
+  color:#fff;
+}
+
+.container{
+  max-width:480px;
+  margin:auto;
+  padding:20px;
+  text-align:center;
+}
+
+/* TOP HEADING */
+h1{
+  font-size:32px;
+  margin-bottom:35px;   /* GAP INCREASED */
+}
+
+/* SUB HEADING */
+h2{
+  font-size:22px;
+  line-height:1.5;
+  margin-bottom:35px;   /* GAP INCREASED */
+}
+
+.highlight{
+  color:#ffd700;
+  border-bottom:2px solid #ffd700;
+  padding-bottom:2px;
+}
+
+/* LIST */
+ul{
+  list-style:none;
+  text-align:left;
+  margin-top:20px;
+}
+
+ul li{
+  font-size:16px;
+  margin-bottom:12px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp-btn{
+  display:block;
+  width:100%;
+  background:#ff4500;
+  color:#fff;
+  text-decoration:none;
+  padding:18px 0;
+  margin:30px 0;
+  font-size:22px;
+  font-weight:bold;
+  border-radius:3px;
+}
+
+/* IMAGE SECTION 1080x1080 */
+.image-section{
+  width:100%;
+  aspect-ratio:1/1;       /* 1080x1080 */
+  overflow:hidden;
+}
+
+.image-section img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <br><br>
+  <h1>Radhika Friendship Club</h1>
+
+  <h2>
+    <span class="highlight">Meeting</span> with High-Profile
+    <span class="highlight">Madam Near You</span>
+  </h2>
+
+  <ul>
+    <li>✔ Trusted High-Profile Madam Network</li>
+    <li>✔ Meeting Near You In 10–15 KM</li>
+    <li>✔ Immediate Income Opportunity</li>
+    <li>✔ Full Enjoyment</li>
+    <li>✔ Chat on WhatsApp for Join Service</li>
+  </ul>
+
+  <a class="whatsapp-btn" href="https://wa.me/917617379902?text=Please%20send%20information" target="_blank">
+   Click here to contact us on WhatsApp
+  </a>
+
+  <div class="image-section">
+    <img src="https://i.ibb.co/yx5Kq6D/14039.png" alt="Image">
+  </div>
+
+</div>
+
+</body>
 </html>
