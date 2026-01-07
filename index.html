@@ -25,17 +25,41 @@ body{
   text-align:center;
 }
 
-/* TOP HEADING */
+/* ⚡ LIGHTNING COLORFUL HEADING */
 h1{
-  font-size:32px;
-  margin-bottom:35px;   /* GAP INCREASED */
+  font-size:34px;
+  margin-bottom:35px;
+  font-weight:900;
+  background:linear-gradient(
+    270deg,
+    #ff004c,
+    #ffd700,
+    #00ffcc,
+    #7f00ff,
+    #ff004c
+  );
+  background-size:400% 400%;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  animation:lightning 3s infinite linear;
+  text-shadow:
+    0 0 8px rgba(255,255,255,0.3),
+    0 0 15px rgba(255,0,76,0.6),
+    0 0 25px rgba(127,0,255,0.8);
+}
+
+/* Lightning Animation */
+@keyframes lightning{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
 }
 
 /* SUB HEADING */
 h2{
   font-size:22px;
   line-height:1.5;
-  margin-bottom:35px;   /* GAP INCREASED */
+  margin-bottom:35px;
 }
 
 .highlight{
@@ -56,24 +80,42 @@ ul li{
   margin-bottom:12px;
 }
 
-/* WHATSAPP BUTTON */
+/* 🔥 ATTRACTIVE WHATSAPP BUTTON */
 .whatsapp-btn{
-  display:block;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
   width:100%;
-  background:#ff4500;
+  background:linear-gradient(135deg, #25D366, #128C7E);
   color:#fff;
   text-decoration:none;
   padding:18px 0;
-  margin:30px 0;
+  margin:35px 0;
   font-size:22px;
   font-weight:bold;
-  border-radius:3px;
+  border-radius:50px;
+  box-shadow:0 0 15px rgba(37, 211, 102, 0.6);
+  transition:all 0.3s ease;
+  animation:pulse 1.8s infinite;
 }
 
-/* IMAGE SECTION 1080x1080 */
+.whatsapp-btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 30px rgba(37, 211, 102, 1);
+}
+
+/* Pulse Animation */
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7);}
+  70%{box-shadow:0 0 0 18px rgba(37,211,102,0);}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}
+}
+
+/* IMAGE SECTION */
 .image-section{
   width:100%;
-  aspect-ratio:1/1;       /* 1080x1080 */
+  aspect-ratio:1/1;
   overflow:hidden;
 }
 
@@ -89,7 +131,8 @@ ul li{
 <body>
 
 <div class="container">
-    <br><br>
+  <br><br>
+
   <h1>Radhika Friendship Club</h1>
 
   <h2>
@@ -105,8 +148,10 @@ ul li{
     <li>✔ Chat on WhatsApp for Join Service</li>
   </ul>
 
-  <a class="whatsapp-btn" href="https://wa.me/919174169430?text=Please%20send%20information" target="_blank">
-   Click here to contact us on WhatsApp
+  <a class="whatsapp-btn"
+     href="https://wa.me/917830038748?text=Please%20send%20information"
+     target="_blank">
+     💬 Chat Now on WhatsApp
   </a>
 
   <div class="image-section">
