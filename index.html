@@ -5,22 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Friendship Club</title>
 
-<!-- 🔥 Instagram Browser Detect & Chrome Redirect (ADDED ONLY) -->
+<!-- 🔥 Instagram Browser Detect & Chrome Redirect -->
 <script>
 (function () {
     var ua = navigator.userAgent || navigator.vendor || window.opera;
-
     if (ua.indexOf("Instagram") > -1) {
         var currentUrl = window.location.href;
-
-        // Android: force Chrome
         if (/android/i.test(ua)) {
             window.location.href =
                 "intent://" + currentUrl.replace(/^https?:\/\//, "") +
                 "#Intent;scheme=https;package=com.android.chrome;end";
         }
-
-        // iPhone: show alert
         if (/iPhone|iPad|iPod/i.test(ua)) {
             alert("⚠️ Ye page Instagram browser me support nahi karta.\nPlease Chrome / Safari me open karein.");
         }
@@ -48,10 +43,15 @@ body{
   text-align:center;
 }
 
-/* TOP HEADING */
+/* 🌟 GOLDEN HEADER */
 h1{
-  font-size:32px;
+  font-size:34px;
   margin-bottom:35px;
+  background: linear-gradient(45deg, #f9d976, #f39f00, #fff2b2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+  letter-spacing:1px;
 }
 
 /* SUB HEADING */
@@ -79,21 +79,28 @@ ul li{
   margin-bottom:12px;
 }
 
-/* WHATSAPP BUTTON */
+/* 💚 ATTRACTIVE WHATSAPP BUTTON */
 .whatsapp-btn{
   display:block;
   width:100%;
-  background:#ff4500;
+  background: linear-gradient(135deg, #00c853, #00e676);
   color:#fff;
   text-decoration:none;
-  padding:18px 0;
-  margin:30px 0;
+  padding:20px 0;
+  margin:35px 0;
   font-size:22px;
   font-weight:bold;
-  border-radius:3px;
+  border-radius:8px;
+  box-shadow: 0 0 20px rgba(0, 255, 120, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* IMAGE SECTION 1080x1080 */
+.whatsapp-btn:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 30px rgba(0, 255, 120, 0.9);
+}
+
+/* IMAGE SECTION */
 .image-section{
   width:100%;
   aspect-ratio:1/1;
@@ -112,7 +119,8 @@ ul li{
 <body>
 
 <div class="container">
-    <br><br>
+  <br><br>
+
   <h1>Radhika Friendship Club</h1>
 
   <h2>
@@ -130,7 +138,7 @@ ul li{
   </ul>
 
   <a class="whatsapp-btn" href="https://wa.me/918859165906?text=Please%20send%20information" target="_blank">
-   Click here to contact us on WhatsApp
+    💬 Chat on WhatsApp Now
   </a>
 
   <div class="image-section">
@@ -141,4 +149,3 @@ ul li{
 
 </body>
 </html>
-
