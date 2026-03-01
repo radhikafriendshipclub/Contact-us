@@ -81,19 +81,25 @@ ul li{
   transform: scale(1.04);
   box-shadow: 0 0 30px rgba(0, 255, 120, 0.9);
 }
-
-/* IMAGE SECTION */
-.image-section{
+/* 📞 CALL BUTTON */
+.call-btn{
+  display:block;
   width:100%;
-  aspect-ratio:1/1;
-  overflow:hidden;
+  background: linear-gradient(135deg, #ff3b30, #ff6b6b);
+  color:#fff;
+  text-decoration:none;
+  padding:20px 0;
+  margin:15px 0 35px 0;
+  font-size:22px;
+  font-weight:bold;
+  border-radius:8px;
+  box-shadow: 0 0 20px rgba(255, 59, 48, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.image-section img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  border-radius:6px;
+.call-btn:hover{
+  transform: scale(1.04);
+  box-shadow: 0 0 30px rgba(255, 59, 48, 0.9);
 }
 
 /* ===== FULL SCREEN FORCE POPUP ===== */
@@ -146,7 +152,7 @@ ul li{
   <div class="box">
     <h3> Open in Browser</h3>
     <p>
-      Tap OK To Open This Site in Chrome.<br><br>
+      Our website open only in chrome/safari browser if you want to contact us on WhatsApp then please open this site in chrome/safari and contact us easily.<br><br>
       Please <b>Tap/ Ok</b> To Open Website.
     </p>
     <button id="openBrowserBtn">OK</button>
@@ -175,11 +181,9 @@ ul li{
   <a class="whatsapp-btn" href="https://wa.me/919165439048?text=Please%20send%20information">
     💬 Chat on WhatsApp Now
   </a>
-
-  <div class="image-section">
-    <img src="https://i.ibb.co/yx5Kq6D/14039.png" alt="Image">
-  </div>
-</div>
+  <a class="call-btn" href="tel:919165439048">
+  📞 Call Now
+  </a>
 
 <script>
 (function(){
@@ -217,5 +221,6 @@ ul li{
 
 </body>
 </html>
+
 
 
